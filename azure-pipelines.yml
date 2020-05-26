@@ -33,7 +33,7 @@ stages:
         azureSubscription: AJSC
         scriptLocation: inlineScript
         inlineScript: |
-          az acr login --resource-group tkkickstarttest-rg  -u ajscacrtoken  -p WVzE6fLexlYJb8Cmqf=uIG1gxxINjAqt -n acrajscseeds.azurecr.io
+          az acr login --resource-group ajsc  -u ajscacrtoken  -p WVzE6fLexlYJb8Cmqf=uIG1gxxINjAqt -n testacrajsc.azurecr.io
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
