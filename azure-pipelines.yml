@@ -33,8 +33,7 @@ stages:
         azureSubscription: AJSC
         scriptLocation: inlineScript
         inlineScript: |
-          az configure --defaults group=tkkickstarttest-rg
-          az acr login --name acrajscseeds --username 73135416-1e48-48a6-9a72-53fb8ffc970e  --password 9be0aec9-84a5-4c71-bbfc-ffb37d9f206b
+          az acr login --resource-group tkkickstarttest-rg --name acrajscseeds --username 73135416-1e48-48a6-9a72-53fb8ffc970e  --password 9be0aec9-84a5-4c71-bbfc-ffb37d9f206b
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
