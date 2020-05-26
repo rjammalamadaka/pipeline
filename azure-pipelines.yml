@@ -10,9 +10,9 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '4a8ac2c3-70d0-40bf-b64c-5298f806af48'
+  dockerRegistryServiceConnection1: '4a8ac2c3-70d0-40bf-b64c-5298f806af48'
   imageRepository: 'rjammalamadakapipeline'
-  containerRegistry: 'acrajscseeds.azurecr.io'
+  containerRegistry: 'testacrajsc.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/app/Dockerfile'
   tag: '$(Build.BuildId)'
   
